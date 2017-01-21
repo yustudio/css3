@@ -1,12 +1,12 @@
-$primary-color: green;
+@import "profile";  // import partial _profile.scss
 
-h1{
-	color: $primary-color;
-}
-
-$bg-color: #2c3e50;
+$bg-color: #2c3e50;  // variables
 $hover-color: #16a085;
 $text-color: #ffffff;
+
+p {
+	font-size: 24px;
+}
 
 // apply style only if they are inside nav
 nav {
@@ -16,7 +16,7 @@ nav {
 		padding: 0;
 		list-style: none;
 	}
-	
+
 	li {
 		display: inline-block;
 	}
