@@ -3,7 +3,38 @@
 $bg-color: #2c3e50;  // variables
 $hover-color: #16a085;
 $text-color: #ffffff;
+$buttonBackground: #16A085;
+$buttonColor: #FFFFFF;
+$buttonPadding: 5px;
 
+
+.button {
+	background: $buttonBackground;
+	border-radius: 8px;
+	color: $buttonColor;
+	display: inline-block;
+	padding: $buttonPadding;
+	text-decoration: none;
+}
+
+
+
+.jumbo-button {
+	@extend .button;
+	padding: $buttonPadding + 30px;
+}
+
+.light-button {
+	@extend .button;
+	background: $buttonBackground*1.5;  // lightens the color
+}
+
+p {
+	a:hover {
+			@extend .button;
+			background: $buttonBackground*1.5;
+		}
+}
 
 .panel {
 	border: 3px solid dodgerblue;
