@@ -42,7 +42,6 @@ nav a {
 nav a:hover {
   background-color: #FFFFFF;
   color: #000000;
-  width:  inherit;
 }
 
 nav a.active {
